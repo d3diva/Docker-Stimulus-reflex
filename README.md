@@ -1,5 +1,7 @@
 # README
 
+To run a Stimulus Reflex in Docker with Sidekiq and Redis 
+
 1. Create a Dockerfile
 
 ```
