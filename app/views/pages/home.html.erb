@@ -1,0 +1,22 @@
+<h1>Home</h1>
+
+<input id="data-entry" type="text" data-reflex="debounced:keyup->ReverseTextReflex#perform"
+  placeholder="Type something..." class="form-control form-control-lg d-inline-block col-4">
+  <br>
+<span class="ml-3"><%= @value %></span>
+
+
+
+<br>
+
+<input id="email" type="text" placeholder="Enter an email address..."
+  class="form-control form-control-lg d-inline-block col-4"
+  data-reflex="input->GravatarReflex#perform">
+
+<span class="ml-3"><%= image_tag @gravatar_image_url || "" %></span>
+
+<input id="name" type="text" placeholder="Enter an name"
+  class="form-control form-control-lg d-inline-block col-4"
+  data-reflex="input->GravatarReflex#name">
+
+<span class="ml-3"><%= @name %></span>
