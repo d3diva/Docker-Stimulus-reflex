@@ -164,16 +164,20 @@ end
 
 18. Edit app/views/pages/index.html.erb
 
-`<a href="#"
+```
+<a href="#"
   data-reflex="click->Counter#increment"
   data-step="1" 
   data-count="<%= @count.to_i %>"
-> Increment <%= @count.to_i %></a>`
+> Increment <%= @count.to_i %></a>
+```
 
 19. Add counter_reflex.rb in app/reflex folder and edit and add
 
-`class CounterReflex < ApplicationReflex
+```
+class CounterReflex < ApplicationReflex
   def increment
     @count = element.dataset[:count].to_i + element.dataset[:step].to_i
   end
-end`
+end
+```
